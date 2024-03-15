@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wiggle_gate"
+version = "0.0.1"
+authors = [
+  { name="Studio Rabota" },
+]
+description = "WiggleGate - Tracks WiggleGate sensor and stores data in CSV"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+wiggle-gate = "wiggle_gate.main:main"
+wiggle-gate-install = "wiggle_gate.install:install"
+
+[project.urls]
+"Homepage" = "https://github.com/wiggle-bin/wiggle-gate.git"

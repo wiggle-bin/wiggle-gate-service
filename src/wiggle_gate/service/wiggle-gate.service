@@ -1,0 +1,9 @@
+[Unit]
+Description=WiggleGate service
+
+[Service]
+WorkingDirectory=%h
+ExecStart=%h/Development/wiggle-gate-service/.venv/bin/wiggle-gate
+
+[Install]
+WantedBy=default.target
