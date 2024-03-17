@@ -15,7 +15,9 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-dependencies = []
+dependencies = [
+  "RPi.GPIO"
+]
 
 [project.scripts]
 wiggle-gate = "wiggle_gate.main:main"
