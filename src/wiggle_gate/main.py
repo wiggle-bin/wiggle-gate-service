@@ -11,6 +11,10 @@ DATA_FILE = DATA_FOLDER / "wiggle-gate.csv"
 
 SENSOR_PIN = 17
 
+def create_directory():
+    os.makedirs(DATA_FOLDER, exist_ok=True)
+
+create_directory()
 
 def main():
     GPIO.setmode(GPIO.BCM)
